@@ -9,18 +9,18 @@ package immu;
  * @author pjha
  */
 public final class Base {
-    private int id1;
+    private int id;
     private String name;
     final private HasA hashA;
 
     public Base(int id, String name, HasA hashA) {
-        this.id1 = id;
+        this.id = id;
         this.name = name;
         this.hashA = hashA;
     }
 
     public int getId() {
-        return id1;
+        return id;
     }
 
     public String getName() {
@@ -32,7 +32,7 @@ public final class Base {
     }
     
     public String toString() {
-        return "{Base(id:"+id1+";name:"+name+";hashA:"+hashA.toString()+")}";
+        return "{Base(id:"+id+";name:"+name+";hashA:"+hashA.toString()+")}";
     }
     
     
